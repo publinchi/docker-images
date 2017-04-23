@@ -15,7 +15,7 @@ To start the containerized Admin Server, run:
 
 To start a containerized Managed Server to self-register with the Admin Server above, run:
 
-        $ docker run -d --link wlsadmin:wlsadmin -p 8001:8001 12212-domain createServer.sh
+        $ docker run -d --name wlsmanaged --link wlsadmin:wlsadmin -p 8001:8001 12212-domain createServer.sh
 
 The above scenario from this sample will give you a WebLogic domain with a cluster setup, on a single host environment.
 
